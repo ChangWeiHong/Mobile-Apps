@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.calendar">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="My Calendar Apps"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".RegisterActivity"
+            android:label="Registration"/>
+        <activity android:name=".ForgetPwActivity"
+            android:label="Forget Password"/>
+        <activity android:name=".AfterLoginActivity"
+            android:label="Homepage"/>
+        <activity android:name=".ForCalendar"
+            android:label="My Calendar Apps"/>
+        <activity android:name=".CustomCalendarView"
+            android:label="My Calendar Apps"/>
+        <activity android:name=".FingerprintActivity"
+            android:label="Fingerprint"/>
+        <activity android:name=".EventViewActivity"
+            android:label="Events"/>
+        <activity android:name=".EventListActivity"
+            android:label="Event List"/>
+
+        <activity android:name=".MainActivity"
+            android:label="My Calendar Apps">
+
+
+
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
